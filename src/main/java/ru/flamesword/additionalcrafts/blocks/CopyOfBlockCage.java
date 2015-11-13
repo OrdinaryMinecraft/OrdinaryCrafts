@@ -1,0 +1,37 @@
+package ru.flamesword.additionalcrafts.blocks;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class CopyOfBlockCage extends Block {
+
+	public CopyOfBlockCage() {
+		super(Material.iron);
+		this.setBlockName("cageblock");
+		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setHardness(3F);
+		this.setResistance(5F);
+		this.setStepSound(soundTypeMetal);
+		this.setHarvestLevel("pickaxe", 0);
+		this.setBlockTextureName("additionalcrafts:CageBlock");
+	}
+	
+    @SideOnly(Side.CLIENT)
+    public int getRenderBlockPass()
+    {
+        return 0;
+    }
+    
+    public boolean renderAsNormalBlock()
+    {
+        return false;
+    }
+    
+    public boolean isOpaqueCube()
+    {
+        return false;
+    }
+}

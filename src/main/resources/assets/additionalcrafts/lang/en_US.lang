@@ -1,0 +1,18 @@
+item.emeraldhoe.name=Emerald Hoe
+item.emeraldaxe.name=Emerald Axe
+item.emeraldpickaxe.name=Emerald Pickaxe
+item.emeraldspade.name=Emerald Shovel
+item.emeraldsword.name=Emerald Sword
+item.emeraldhelmet.name=Emerald Helmet
+item.emeraldplate.name=Emerald Plate
+item.emeraldpants.name=Emerald Pants
+item.emeraldboots.name=Emerald Boots
+
+tile.bluebrickblock.name=Blue Bricks
+tile.bluebrickstairs.name=Blue Brick Stairs
+tile.smokeblock.name=Smoke Block
+tile.boxblock.name=Box
+tile.boxofcoalblock.name=Box Of Coal
+tile.cageblock.name=Cage
+tile.invisibleblock.name=Invisible Block
+tile.candleblock.name=Candle
