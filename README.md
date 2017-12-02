@@ -1,5 +1,5 @@
 # OrdinaryCrafts
-Minecraft Forge Mod. Adds 4 new ores and new mobs to game.
+Minecraft Forge Mod. Adds new crafts from vanilla materials (e.g. emerald armor, cobweb etc) and more.
 
 ![Prewiew](https://ordinary-minecraft.ru/pictures/Ordinarycrafts-1.png)
 
