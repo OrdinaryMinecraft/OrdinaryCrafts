@@ -1,4 +1,4 @@
-# Ores & Mobs
+# OrdinaryCrafts
 Minecraft Forge Mod. Adds 4 new ores and new mobs to game.
 
 ![Prewiew](https://ordinary-minecraft.ru/pictures/Ordinarycrafts-1.png)
