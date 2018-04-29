@@ -16,3 +16,7 @@ tile.boxofcoalblock.name=Box Of Coal
 tile.cageblock.name=Cage
 tile.invisibleblock.name=Invisible Block
 tile.candleblock.name=Candle
+
+tile.invisibleblocklight.name=Invisible Light Block
+tile.skyblock.name=Sky Block
+tile.dimlampblock.name=Dim Lamp

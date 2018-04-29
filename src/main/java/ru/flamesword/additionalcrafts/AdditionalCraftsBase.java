@@ -1,13 +1,6 @@
 package ru.flamesword.additionalcrafts;
 
-import ru.flamesword.additionalcrafts.blocks.BlockBlueBrickBlock;
-import ru.flamesword.additionalcrafts.blocks.BlockBlueBrickStairs;
-import ru.flamesword.additionalcrafts.blocks.BlockBox;
-import ru.flamesword.additionalcrafts.blocks.BlockBoxOfCoal;
-import ru.flamesword.additionalcrafts.blocks.BlockCage;
-import ru.flamesword.additionalcrafts.blocks.BlockCandle;
-import ru.flamesword.additionalcrafts.blocks.BlockInvisible;
-import ru.flamesword.additionalcrafts.blocks.BlockSmoke;
+import ru.flamesword.additionalcrafts.blocks.*;
 import ru.flamesword.additionalcrafts.items.EmeraldArmor;
 import ru.flamesword.additionalcrafts.items.ItemEmeraldAxe;
 import ru.flamesword.additionalcrafts.items.ItemEmeraldHoe;
@@ -29,7 +22,7 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod (modid = "additionalcrafts", name = "Ordinary Additional Crafts", version = "1.1")
+@Mod (modid = "additionalcrafts", name = "Ordinary Additional Crafts", version = "1.2")
 
 public class AdditionalCraftsBase {
 	
@@ -51,6 +44,9 @@ public class AdditionalCraftsBase {
 	public static Block cageblock;
 	public static Block invisibleblock;
 	public static Block candleblock;
+	public static Block invisibleblocklight;
+	public static Block skyblock;
+	public static Block dimlampblock;
 	
 	public static ToolMaterial EMERALDTOOL = EnumHelper.addToolMaterial("EMERALD", 3, 1024, 10.0F, 4.0F, 15);
 	public static ArmorMaterial EMERALDARM = EnumHelper.addArmorMaterial("EMERALD", 30, new int[] {3, 8, 6, 3}, 15);
@@ -59,31 +55,12 @@ public class AdditionalCraftsBase {
 	public void preLoad(FMLPreInitializationEvent event)
 	{
 		ConfigHelper.setupConfig(new Configuration(event.getSuggestedConfigurationFile()));
-		
-		if (ConfigHelper.ordinarycrafts) {
-			Blocks.fence.setCreativeTab(CreativeTabs.tabDecorations);
-			
-			GameRegistry.addRecipe(new ItemStack(Item.getItemFromBlock(Blocks.fence), 1), 
-	                new Object[]{ "AAA", "AAA",
-	                ('A'), Items.stick});
-			
-			GameRegistry.addRecipe(new ItemStack(Item.getItemFromBlock(Block.getBlockById(ConfigHelper.dioritesmoothID)), 3, ConfigHelper.dioritesmoothDATA), 
-	                new Object[]{ "AAA",
-	                ('A'), new ItemStack(Item.getItemFromBlock(Block.getBlockById(ConfigHelper.dioriteID)), 1, ConfigHelper.dioriteDATA)});
-			
-			GameRegistry.addRecipe(new ItemStack(Item.getItemFromBlock(Block.getBlockById(ConfigHelper.andesitesmoothID)), 3, ConfigHelper.andesitesmoothDATA), 
-	                new Object[]{ "AAA",
-	                ('A'), new ItemStack(Item.getItemFromBlock(Block.getBlockById(ConfigHelper.andesiteID)), 1, ConfigHelper.andesiteDATA)});
-			
-			GameRegistry.addRecipe(new ItemStack(Item.getItemFromBlock(Block.getBlockById(ConfigHelper.granitesmoothID)), 3, ConfigHelper.granitesmoothDATA), 
-	                new Object[]{ "AAA",
-	                ('A'), new ItemStack(Item.getItemFromBlock(Block.getBlockById(ConfigHelper.graniteID)), 1, ConfigHelper.graniteDATA)});
-			
-			GameRegistry.addRecipe(new ItemStack(Item.getItemFromBlock(Block.getBlockById(ConfigHelper.basaltsmoothID)), 3, ConfigHelper.basaltsmoothDATA), 
-	                new Object[]{ "AAA",
-	                ('A'), new ItemStack(Item.getItemFromBlock(Block.getBlockById(ConfigHelper.basaltID)), 1, ConfigHelper.basaltDATA)});
-		}
-		
+
+		Blocks.fence.setCreativeTab(CreativeTabs.tabDecorations);
+		GameRegistry.addRecipe(new ItemStack(Item.getItemFromBlock(Blocks.fence), 1),
+				new Object[]{ "AAA", "AAA",
+						('A'), Items.stick});
+
 		if (ConfigHelper.emeraldtools) {
 			emeraldpickaxe = new ItemEmeraldPickaxe().setUnlocalizedName("emeraldpickaxe");
 			GameRegistry.registerItem(emeraldpickaxe, "emeraldpickaxe");
@@ -209,6 +186,9 @@ public class AdditionalCraftsBase {
 			GameRegistry.addRecipe(new ItemStack(invisibleblock, 8), 
 	                new Object[]{ "AAA", "ABA", "AAA",
 	                ('A'), new ItemStack(Item.getItemFromBlock(Blocks.glass), 1, 0), ('B'), Items.golden_carrot});
+
+			invisibleblocklight = new BlockInvisibleLight();
+			GameRegistry.registerBlock(invisibleblocklight, "invisibleblocklight");
 		}
 		
 		if (ConfigHelper.candleblock) {
@@ -219,6 +199,14 @@ public class AdditionalCraftsBase {
 	                new Object[]{ "A", "B",
 	                ('A'), Items.string, ('B'), Items.magma_cream});
 		}
+
+		if (ConfigHelper.skyblock) {
+			skyblock = new BlockSky();
+			GameRegistry.registerBlock(skyblock, "skyblock");
+		}
+
+		dimlampblock = new BlockDimLamp();
+		GameRegistry.registerBlock(dimlampblock, "dimlampblock");
 	}
 	
 }

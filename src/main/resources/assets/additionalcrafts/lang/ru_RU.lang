@@ -16,3 +16,7 @@ tile.boxofcoalblock.name=Ящик угля
 tile.cageblock.name=Клетка
 tile.invisibleblock.name=Невидимый блок
 tile.candleblock.name=Свеча
+
+tile.invisibleblocklight.name=Невидимый источник света
+tile.skyblock.name=Блок неба
+tile.dimlampblock.name=Тусклая лампа
