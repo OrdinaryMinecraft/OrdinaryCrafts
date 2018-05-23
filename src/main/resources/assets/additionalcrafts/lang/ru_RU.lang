@@ -20,3 +20,14 @@ tile.candleblock.name=Свеча
 tile.invisibleblocklight.name=Невидимый источник света
 tile.skyblock.name=Блок неба
 tile.dimlampblock.name=Тусклая лампа
+
+item.jewelgold1.name=Золотая тарелка
+item.jewelgold2.name=Золотое кольцо
+item.jewelgold3.name=Золотое ожерелье
+item.jewelgold4.name=Золотой канделябр
+item.jewelgold5.name=Золотой кубок
+item.jewelsilver1.name=Серебряная тарелка
+item.jewelsilver2.name=Серебряное кольцо
+item.jewelsilver3.name=Серебряное ожерелье
+item.jewelsilver4.name=Серебряный канделябр
+item.jewelsilver5.name=Серебряный кубок

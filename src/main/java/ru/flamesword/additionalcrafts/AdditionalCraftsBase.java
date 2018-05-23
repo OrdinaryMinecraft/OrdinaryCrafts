@@ -35,6 +35,17 @@ public class AdditionalCraftsBase {
 	public static Item emeraldplate;
 	public static Item emeraldpants;
 	public static Item emeraldboots;
+
+	public static Item jewelgold1;
+	public static Item jewelgold2;
+	public static Item jewelgold3;
+	public static Item jewelgold4;
+	public static Item jewelgold5;
+	public static Item jewelsilver1;
+	public static Item jewelsilver2;
+	public static Item jewelsilver3;
+	public static Item jewelsilver4;
+	public static Item jewelsilver5;
 	
 	public static Block bluebrickblock;
 	public static Block bluebrickstairs;
@@ -207,6 +218,36 @@ public class AdditionalCraftsBase {
 
 		dimlampblock = new BlockDimLamp();
 		GameRegistry.registerBlock(dimlampblock, "dimlampblock");
+
+		jewelgold1 = new Item().setUnlocalizedName("jewelgold1").setTextureName("additionalcrafts:JewelGold1").setCreativeTab(CreativeTabs.tabMisc);
+		GameRegistry.registerItem(jewelgold1, "jewelgold1");
+
+		jewelgold2 = new Item().setUnlocalizedName("jewelgold2").setTextureName("additionalcrafts:JewelGold2").setCreativeTab(CreativeTabs.tabMisc);
+		GameRegistry.registerItem(jewelgold2, "jewelgold2");
+
+		jewelgold3 = new Item().setUnlocalizedName("jewelgold3").setTextureName("additionalcrafts:JewelGold3").setCreativeTab(CreativeTabs.tabMisc);
+		GameRegistry.registerItem(jewelgold3, "jewelgold3");
+
+		jewelgold4 = new Item().setUnlocalizedName("jewelgold4").setTextureName("additionalcrafts:JewelGold4").setCreativeTab(CreativeTabs.tabMisc);
+		GameRegistry.registerItem(jewelgold4, "jewelgold4");
+
+		jewelgold5 = new Item().setUnlocalizedName("jewelgold5").setTextureName("additionalcrafts:JewelGold5").setCreativeTab(CreativeTabs.tabMisc);
+		GameRegistry.registerItem(jewelgold5, "jewelgold5");
+
+		jewelsilver1 = new Item().setUnlocalizedName("jewelsilver1").setTextureName("additionalcrafts:JewelSilver1").setCreativeTab(CreativeTabs.tabMisc);
+		GameRegistry.registerItem(jewelsilver1, "jewelsilver1");
+
+		jewelsilver2 = new Item().setUnlocalizedName("jewelsilver2").setTextureName("additionalcrafts:JewelSilver2").setCreativeTab(CreativeTabs.tabMisc);
+		GameRegistry.registerItem(jewelsilver2, "jewelsilver2");
+
+		jewelsilver3 = new Item().setUnlocalizedName("jewelsilver3").setTextureName("additionalcrafts:JewelSilver3").setCreativeTab(CreativeTabs.tabMisc);
+		GameRegistry.registerItem(jewelsilver3, "jewelsilver3");
+
+		jewelsilver4 = new Item().setUnlocalizedName("jewelsilver4").setTextureName("additionalcrafts:JewelSilver4").setCreativeTab(CreativeTabs.tabMisc);
+		GameRegistry.registerItem(jewelsilver4, "jewelsilver4");
+
+		jewelsilver5 = new Item().setUnlocalizedName("jewelsilver5").setTextureName("additionalcrafts:JewelSilver5").setCreativeTab(CreativeTabs.tabMisc);
+		GameRegistry.registerItem(jewelsilver5, "jewelsilver5");
 	}
 	
 }
