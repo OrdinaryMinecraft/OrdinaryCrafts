@@ -8,7 +8,7 @@ public class ItemEmeraldPickaxe extends ItemPickaxe {
 
 	public ItemEmeraldPickaxe() {
         super(AdditionalCraftsBase.EMERALDTOOL);
-        this.setCreativeTab(CreativeTabs.tabTools);
+        this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
         this.setTextureName("additionalcrafts:EmeraldPickaxe");
 	}
 

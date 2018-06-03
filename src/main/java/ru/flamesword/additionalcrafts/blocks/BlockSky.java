@@ -22,7 +22,7 @@ public class BlockSky extends Block {
     public BlockSky() {
         super(Material.glass);
         this.setBlockName("skyblock");
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
         this.setHardness(0.1F);
         this.setResistance(1F);
         this.setStepSound(soundTypeGlass);

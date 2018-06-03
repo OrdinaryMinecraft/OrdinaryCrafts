@@ -10,7 +10,7 @@ public class BlockBlueBrickStairs extends BlockStairs {
 	public BlockBlueBrickStairs() {
 		super(AdditionalCraftsBase.bluebrickblock, 1);
 		this.setBlockName("bluebrickstairs");
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		this.setHardness(3F);
 		this.setLightOpacity(0);
 		this.setResistance(5F);

@@ -8,7 +8,7 @@ public class ItemEmeraldHoe extends ItemHoe {
 
 	public ItemEmeraldHoe() {
         super(AdditionalCraftsBase.EMERALDTOOL);
-        this.setCreativeTab(CreativeTabs.tabTools);
+        this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
         this.setTextureName("additionalcrafts:EmeraldHoe");
 	}
 }

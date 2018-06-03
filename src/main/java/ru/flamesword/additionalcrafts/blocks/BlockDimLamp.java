@@ -2,14 +2,14 @@ package ru.flamesword.additionalcrafts.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
+import ru.flamesword.additionalcrafts.AdditionalCraftsBase;
 
 public class BlockDimLamp extends Block {
 
     public BlockDimLamp()
         {
             super(Material.wood);
-            this.setCreativeTab(CreativeTabs.tabDecorations);
+            this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
             this.setBlockTextureName("additionalcrafts:DimLamp");
             this.setBlockName("dimlampblock");
             this.setHardness(1F);

@@ -4,14 +4,14 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
+import ru.flamesword.additionalcrafts.AdditionalCraftsBase;
 
 public class CopyOfBlockCage extends Block {
 
 	public CopyOfBlockCage() {
 		super(Material.iron);
 		this.setBlockName("cageblock");
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		this.setHardness(3F);
 		this.setResistance(5F);
 		this.setStepSound(soundTypeMetal);

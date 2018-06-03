@@ -8,7 +8,7 @@ public class ItemEmeraldAxe extends ItemAxe {
 
 	public ItemEmeraldAxe() {
         super(AdditionalCraftsBase.EMERALDTOOL);
-        this.setCreativeTab(CreativeTabs.tabTools);
+        this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
         this.setTextureName("additionalcrafts:EmeraldAxe");
 	}
 

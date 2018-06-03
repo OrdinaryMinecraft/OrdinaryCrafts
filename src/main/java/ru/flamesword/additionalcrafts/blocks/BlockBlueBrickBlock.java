@@ -2,14 +2,14 @@ package ru.flamesword.additionalcrafts.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
+import ru.flamesword.additionalcrafts.AdditionalCraftsBase;
 
 public class BlockBlueBrickBlock extends Block {
 
 	public BlockBlueBrickBlock() {
 		super(Material.rock);
 		this.setBlockName("bluebrickblock");
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		this.setHardness(3F);
 		this.setResistance(5F);
 		this.setStepSound(soundTypeStone);

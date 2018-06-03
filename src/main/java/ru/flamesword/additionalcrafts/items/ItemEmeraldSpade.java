@@ -8,7 +8,7 @@ public class ItemEmeraldSpade extends ItemSpade{
 
 	public ItemEmeraldSpade() {
         super(AdditionalCraftsBase.EMERALDTOOL);
-        this.setCreativeTab(CreativeTabs.tabTools);
+        this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
         this.setTextureName("additionalcrafts:EmeraldSpade");
 	}
 

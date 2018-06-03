@@ -8,7 +8,7 @@ public class ItemEmeraldSword extends ItemSword {
 
 	public ItemEmeraldSword() {
         super(AdditionalCraftsBase.EMERALDTOOL);
-        this.setCreativeTab(CreativeTabs.tabCombat);
+        this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
         this.setTextureName("additionalcrafts:EmeraldSword");
 	}
 

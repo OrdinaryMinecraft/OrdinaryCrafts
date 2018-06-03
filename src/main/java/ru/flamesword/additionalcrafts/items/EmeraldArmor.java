@@ -12,7 +12,7 @@ public class EmeraldArmor extends ItemArmor {
       
       public EmeraldArmor(int id, int armorType) {
               super(AdditionalCraftsBase.EMERALDARM, id, armorType);
-              this.setCreativeTab(CreativeTabs.tabCombat);
+              this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
               this.setMaxStackSize(1);
               this.setTextureName();
       }

@@ -41,11 +41,13 @@ public class AdditionalCraftsBase {
 	public static Item jewelgold3;
 	public static Item jewelgold4;
 	public static Item jewelgold5;
+	public static Item jewelgold6;
 	public static Item jewelsilver1;
 	public static Item jewelsilver2;
 	public static Item jewelsilver3;
 	public static Item jewelsilver4;
 	public static Item jewelsilver5;
+	public static Item jewelsilver6;
 	
 	public static Block bluebrickblock;
 	public static Block bluebrickstairs;
@@ -58,7 +60,9 @@ public class AdditionalCraftsBase {
 	public static Block invisibleblocklight;
 	public static Block skyblock;
 	public static Block dimlampblock;
-	
+
+	public static CreativeTabs tabOrdinaryCrafts = new TabOrdinaryCrafts("ordinarycrafts");
+
 	public static ToolMaterial EMERALDTOOL = EnumHelper.addToolMaterial("EMERALD", 3, 1024, 10.0F, 4.0F, 15);
 	public static ArmorMaterial EMERALDARM = EnumHelper.addArmorMaterial("EMERALD", 30, new int[] {3, 8, 6, 3}, 15);
 	
@@ -219,35 +223,41 @@ public class AdditionalCraftsBase {
 		dimlampblock = new BlockDimLamp();
 		GameRegistry.registerBlock(dimlampblock, "dimlampblock");
 
-		jewelgold1 = new Item().setUnlocalizedName("jewelgold1").setTextureName("additionalcrafts:JewelGold1").setCreativeTab(CreativeTabs.tabMisc);
+		jewelgold1 = new Item().setUnlocalizedName("jewelgold1").setTextureName("additionalcrafts:JewelGold1").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelgold1, "jewelgold1");
 
-		jewelgold2 = new Item().setUnlocalizedName("jewelgold2").setTextureName("additionalcrafts:JewelGold2").setCreativeTab(CreativeTabs.tabMisc);
+		jewelgold2 = new Item().setUnlocalizedName("jewelgold2").setTextureName("additionalcrafts:JewelGold2").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelgold2, "jewelgold2");
 
-		jewelgold3 = new Item().setUnlocalizedName("jewelgold3").setTextureName("additionalcrafts:JewelGold3").setCreativeTab(CreativeTabs.tabMisc);
+		jewelgold3 = new Item().setUnlocalizedName("jewelgold3").setTextureName("additionalcrafts:JewelGold3").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelgold3, "jewelgold3");
 
-		jewelgold4 = new Item().setUnlocalizedName("jewelgold4").setTextureName("additionalcrafts:JewelGold4").setCreativeTab(CreativeTabs.tabMisc);
+		jewelgold4 = new Item().setUnlocalizedName("jewelgold4").setTextureName("additionalcrafts:JewelGold4").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelgold4, "jewelgold4");
 
-		jewelgold5 = new Item().setUnlocalizedName("jewelgold5").setTextureName("additionalcrafts:JewelGold5").setCreativeTab(CreativeTabs.tabMisc);
+		jewelgold5 = new Item().setUnlocalizedName("jewelgold5").setTextureName("additionalcrafts:JewelGold5").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelgold5, "jewelgold5");
 
-		jewelsilver1 = new Item().setUnlocalizedName("jewelsilver1").setTextureName("additionalcrafts:JewelSilver1").setCreativeTab(CreativeTabs.tabMisc);
+		jewelgold6 = new Item().setUnlocalizedName("jewelgold6").setTextureName("additionalcrafts:JewelGold6").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
+		GameRegistry.registerItem(jewelgold6, "jewelgold6");
+
+		jewelsilver1 = new Item().setUnlocalizedName("jewelsilver1").setTextureName("additionalcrafts:JewelSilver1").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelsilver1, "jewelsilver1");
 
-		jewelsilver2 = new Item().setUnlocalizedName("jewelsilver2").setTextureName("additionalcrafts:JewelSilver2").setCreativeTab(CreativeTabs.tabMisc);
+		jewelsilver2 = new Item().setUnlocalizedName("jewelsilver2").setTextureName("additionalcrafts:JewelSilver2").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelsilver2, "jewelsilver2");
 
-		jewelsilver3 = new Item().setUnlocalizedName("jewelsilver3").setTextureName("additionalcrafts:JewelSilver3").setCreativeTab(CreativeTabs.tabMisc);
+		jewelsilver3 = new Item().setUnlocalizedName("jewelsilver3").setTextureName("additionalcrafts:JewelSilver3").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelsilver3, "jewelsilver3");
 
-		jewelsilver4 = new Item().setUnlocalizedName("jewelsilver4").setTextureName("additionalcrafts:JewelSilver4").setCreativeTab(CreativeTabs.tabMisc);
+		jewelsilver4 = new Item().setUnlocalizedName("jewelsilver4").setTextureName("additionalcrafts:JewelSilver4").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelsilver4, "jewelsilver4");
 
-		jewelsilver5 = new Item().setUnlocalizedName("jewelsilver5").setTextureName("additionalcrafts:JewelSilver5").setCreativeTab(CreativeTabs.tabMisc);
+		jewelsilver5 = new Item().setUnlocalizedName("jewelsilver5").setTextureName("additionalcrafts:JewelSilver5").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelsilver5, "jewelsilver5");
+
+		jewelsilver6 = new Item().setUnlocalizedName("jewelsilver6").setTextureName("additionalcrafts:JewelSilver6").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
+		GameRegistry.registerItem(jewelsilver6, "jewelsilver6");
 	}
 	
 }

@@ -6,12 +6,9 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.Entity;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
+import ru.flamesword.additionalcrafts.AdditionalCraftsBase;
 
 public class BlockCandle extends Block
 {
@@ -19,7 +16,7 @@ public class BlockCandle extends Block
     public BlockCandle()
     {
         super(Material.clay);
-        this.setCreativeTab(CreativeTabs.tabDecorations);
+        this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		this.setBlockTextureName("additionalcrafts:CandleBlock");
         this.setBlockName("candleblock");
 		this.setHardness(0F);

@@ -4,10 +4,10 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
+import ru.flamesword.additionalcrafts.AdditionalCraftsBase;
 
 import java.util.Random;
 
@@ -16,7 +16,7 @@ public class BlockInvisibleLight extends Block {
     public BlockInvisibleLight() {
         super(Material.glass);
         this.setBlockName("invisibleblocklight");
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
         this.setHardness(0.1F);
         this.setResistance(1F);
         this.setLightLevel(1);
