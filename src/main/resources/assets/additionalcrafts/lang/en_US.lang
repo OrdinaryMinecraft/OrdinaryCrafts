@@ -23,6 +23,12 @@ tile.invisibleblocklight.name=Invisible Light Block
 tile.skyblock.name=Sky Block
 tile.dimlampblock.name=Dim Lamp
 
+tile.darkdirtblock.name=Dark Dirt
+tile.darkgrassblock.name=Dark Grass
+tile.darkgrassblockdead.name=Dark Dead Grass
+tile.darkstoneblock.name=Dark Stone
+tile.darkcobblestoneblock.name=Dark Cobblestone
+
 item.jewelgold1.name=Golden Jewel
 item.jewelgold2.name=Golden Jewel
 item.jewelgold3.name=Golden Jewel

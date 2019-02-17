@@ -60,6 +60,11 @@ public class AdditionalCraftsBase {
 	public static Block invisibleblocklight;
 	public static Block skyblock;
 	public static Block dimlampblock;
+	public static Block darkdirtblock;
+	public static Block darkgrassblock;
+	public static Block darkgrassblockdead;
+	public static Block darkstoneblock;
+	public static Block darkcobblestoneblock;
 
 	public static CreativeTabs tabOrdinaryCrafts = new TabOrdinaryCrafts("ordinarycrafts");
 
@@ -222,6 +227,21 @@ public class AdditionalCraftsBase {
 
 		dimlampblock = new BlockDimLamp();
 		GameRegistry.registerBlock(dimlampblock, "dimlampblock");
+
+		darkdirtblock = new BlockDarkDirt();
+		GameRegistry.registerBlock(darkdirtblock, "darkdirtblock");
+
+		darkgrassblock = new BlockDarkGrass();
+		GameRegistry.registerBlock(darkgrassblock, "darkgrassblock");
+
+		darkgrassblockdead = new BlockDarkGrassDead();
+		GameRegistry.registerBlock(darkgrassblockdead, "darkgrassblockdead");
+
+		darkstoneblock = new BlockDarkStone();
+		GameRegistry.registerBlock(darkstoneblock, "darkstoneblock");
+
+		darkcobblestoneblock = new BlockDarkCobblestone();
+		GameRegistry.registerBlock(darkcobblestoneblock, "darkcobblestoneblock");
 
 		jewelgold1 = new Item().setUnlocalizedName("jewelgold1").setTextureName("additionalcrafts:JewelGold1").setCreativeTab(AdditionalCraftsBase.tabOrdinaryCrafts);
 		GameRegistry.registerItem(jewelgold1, "jewelgold1");

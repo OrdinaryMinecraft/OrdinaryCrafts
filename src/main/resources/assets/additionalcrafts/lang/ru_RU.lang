@@ -23,6 +23,12 @@ tile.invisibleblocklight.name=Невидимый источник света
 tile.skyblock.name=Блок неба
 tile.dimlampblock.name=Тусклая лампа
 
+tile.darkdirtblock.name=Темная земля
+tile.darkgrassblock.name=Темная трава
+tile.darkgrassblockdead.name=Темная мертвая трава
+tile.darkstoneblock.name=Темный камень
+tile.darkcobblestoneblock.name=Темный булыжник
+
 item.jewelgold1.name=Золотая тарелка
 item.jewelgold2.name=Золотое кольцо
 item.jewelgold3.name=Золотое ожерелье
